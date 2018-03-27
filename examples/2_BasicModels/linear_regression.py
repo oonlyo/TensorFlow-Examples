@@ -67,7 +67,7 @@ with tf.Session() as sess:
 
     # Graphic display
     plt.plot(train_X, train_Y, 'ro', label='Original data')
-    plt.plot(train_X, sess.run(W) * train_X + sess.run(b), label='Fitted line')
+    plt.plot(train_X, sess.run(W) * train_X + sess.run(b), 'b*', label='Fitted line')
     plt.legend()
     plt.show()
 
